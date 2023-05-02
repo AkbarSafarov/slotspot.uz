@@ -624,10 +624,6 @@ img, textarea, input, table {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-
-    @media all and (min-width: 1025px){
-        display: none;
-    }
 }
 
 .content_block_wr {
