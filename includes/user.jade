@@ -1,0 +1,109 @@
+include _header.jade
+	<div class="main_block_wrap profil_page">
+		<div class="title">
+			<div class="back_btn" style="opacity: 0;visibility: hidden;"></div>
+			<div class="title_name">Профиль</div>
+			<div class="btn_logout"></div>
+		</div>
+		<form action="" class="register_user_fields">
+			<div class="register_top">
+				<div class="field avatar_image">
+					<input type="file" name="image" id="image" accept="image/*" />
+					<div id="preview_avatar">
+						<div id="avatar_img" style="background: url(files/profil.png) center center / cover no-repeat;"></div>
+						<div id="upload-button" aria-labelledby="image" aria-describedby="image"></div>
+					</div>
+				</div>
+				<div class="profil_name">Роберт Фокс</div>
+				<div class="profil_phone">+998909344657</div>
+				<div class="field readonly">
+					<div class="field_name">Номер телефона</div>
+					<input type="text" readonly value="+998 90 934 46 57">
+				</div>
+				<div class="field requared">
+					<div class="field_name">Полное имя *</div>
+					<input type="text" required value="Роберт Фокс">
+				</div>
+				<div class="field">
+					<div class="field_name">Дата рождения</div>
+					<input type="date" placeholder="ДД/ММ/ГГГГ" value="2018-07-22">
+				</div>
+				<div class="field radio_sex">
+					<div class="field_name">Выберите пол</div>
+					<div class="field_inner">
+						<label>
+							<input type="radio" name="sex" checked value="man">
+							<span>Мужской</span>
+						</label>
+						<label>
+							<input type="radio" name="sex" value="woman">
+							<span>Женский</span>
+						</label>
+					</div>
+				</div>
+				<div class="field select_lang">
+					<div class="field_name">Выбор языка</div>
+					<div class="lang_block_select">Русский</div>
+				</div>
+			</div>
+			<div class="register_bottom">
+				<button class="btn save_edit_btn">Сохранить</button>
+				<div class="delete_profil">Деактивировать аккаунт</div>
+			</div>
+		</form>
+	</div>
+	<div class="fixed_menu_panel">
+		<ul>
+			<li>
+				<a href="feed.html">
+					<span class="icon">
+						<img src="files/feed.svg" alt="">
+					</span>
+					<span class="name">Все места</span>
+				</a>
+			</li>
+			<li>
+				<a href="calendar.html">
+					<span class="icon">
+						<img src="files/calendar.svg" alt="">
+					</span>
+					<span class="name">Мои брони</span>
+				</a>
+			</li>
+			<li>
+				<a href="bookmark.html">
+					<span class="icon">
+						<img src="files/bookmark.svg" alt="">
+					</span>
+					<span class="name">Закладки</span>
+				</a>
+			</li>
+			<li class="opened">
+				<a href="user.html">
+					<span class="icon">
+						<img src="files/user.svg" alt="">
+					</span>
+					<span class="name">Профиль</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="popop_modal logout_block_popup">
+		<div class="popup_inner">
+			<div class="title">Вы точно хотите выйти из аккаунта?</div>
+			<div class="btns">
+				<div class="btn close-btn">Нет, остаться</div>
+				<div class="btn">Да, выйти</div>
+			</div>
+		</div>
+	</div>
+	<div class="popop_modal delete_block_popup">
+		<div class="popup_inner">
+			<div class="title">Вы точно хотите деактивировать аккаунт?</div>
+			<div class="btns">
+				<div class="btn close-btn">Нет</div>
+				<div class="btn red_btn">Да, деактивировать</div>
+			</div>
+		</div>
+	</div>
+include _footer.jade

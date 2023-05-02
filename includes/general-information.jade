@@ -1,0 +1,38 @@
+include _header.jade
+	<form action="" class="register_user_fields">
+		<div class="register_top">
+			<div class="title">Общая информация</div>
+			<div class="field avatar_image">
+				<input type="file" name="image" id="image" accept="image/*" />
+				<div id="preview_avatar">
+					<div id="avatar_img"></div>
+					<div id="upload-button" aria-labelledby="image" aria-describedby="image"></div>
+				</div>
+			</div>
+			<div class="field requared">
+				<div class="field_name">Полное имя *</div>
+				<input type="text" required>
+			</div>
+			<div class="field">
+				<div class="field_name">Дата рождения</div>
+				<input type="date" placeholder="ДД/ММ/ГГГГ">
+			</div>
+			<div class="field radio_sex">
+				<div class="field_name">Выберите пол</div>
+				<div class="field_inner">
+					<label>
+						<input type="radio" name="sex" value="man">
+						<span>Мужской</span>
+					</label>
+					<label>
+						<input type="radio" name="sex" value="woman">
+						<span>Женский</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="register_bottom">
+			<button type="submit" class="btn">Сохранить изменения</button>
+		</div>
+	</form>
+include _footer.jade

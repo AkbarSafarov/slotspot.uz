@@ -1,0 +1,135 @@
+include _header.jade
+	<div class="main_block_wrap">
+		<div class="title">
+			<div class="back_btn"></div>
+			<div class="title_name">Забронировать</div>
+			<div class="btn_save"></div>
+		</div>
+		<div class="book_item">
+			<span class="image">
+				<img src="files/item.png" alt="">
+			</span>
+			<span class="right">
+				<span class="name">Barbershop Tashkent</span>
+				<span class="text">Адрес: Ул. Бунедкор 8а метро миллий бог, Tashkent</span>
+			</span>
+		</div>
+		<div class="discription">
+			<div class="name">Описание</div>
+			<div class="body">Стричься у Дяди Chill все равно что быть незаурядным. На первый взгляд кажется все знакомым, но даже индивидуальные кресла уже подчеркнут вашу особенность.</div>
+		</div>
+		<div class="btns_call">
+			<a href="te:12365544" class="btn call_btn"><span>Позвонить</span></a>
+			<a href="" target="_blank" class="btn map_link"><span>Построить маршрут</span></a>
+		</div>
+		<div class="working_days">
+			<div class="working_title">
+				<div class="name">Рабочие дни / часы</div>
+				<div class="working_dropdown">Сейчас открыто</div>
+			</div>
+			<div class="working_body">
+				<div class="item">
+					<div class="day">Понедельник</div>
+					<div class="time">с 10:00 до 22:00</div>
+				</div>
+				<div class="item">
+					<div class="day">Вторник</div>
+					<div class="time">с 10:00 до 22:00</div>
+				</div>
+				<div class="item">
+					<div class="day">Среда</div>
+					<div class="time">с 10:00 до 22:00</div>
+				</div>
+				<div class="item">
+					<div class="day">Четверг</div>
+					<div class="time">с 10:00 до 22:00</div>
+				</div>
+				<div class="item">
+					<div class="day">Пятница</div>
+					<div class="time">с 10:00 до 22:00</div>
+				</div>
+				<div class="item">
+					<div class="day">Суббота</div>
+					<div class="time">с 10:00 до 22:00</div>
+				</div>
+				<div class="item">
+					<div class="day">Воскресенье</div>
+					<div class="time">Выходной</div>
+				</div>
+			</div>
+		</div>
+		<div class="choose_slot_block">
+			<div class="name">Выберите свободный слот</div>
+			<div class="swiper mySwiperSlot" data-id="mySwiperSlot">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide item active">
+						<div class="day_week">Вс</div>
+						<div class="day">23 апр</div>
+						<div class="time">14:00</div>
+					</div>
+					<div class="swiper-slide item">
+						<div class="day_week">Вс</div>
+						<div class="day">23 апр</div>
+						<div class="time">14:00</div>
+					</div>
+					<div class="swiper-slide item">
+						<div class="day_week">Вс</div>
+						<div class="day">23 апр</div>
+						<div class="time">14:00</div>
+					</div>
+					<div class="swiper-slide item">
+						<div class="day_week">Вс</div>
+						<div class="day">23 апр</div>
+						<div class="time">14:00</div>
+					</div>
+					<div class="swiper-slide item">
+						<div class="day_week">Вс</div>
+						<div class="day">23 апр</div>
+						<div class="time">14:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service_block">
+			<div class="title_name">Наши услуги</div>
+			<div class="service_item active">
+				<div class="servoce_top">
+					<div class="name">Мужская стрижка (VIP кабинка)</div>
+					<div class="price">300 000 UZS</div>
+				</div>
+				<div class="time">1ч 30м</div>
+				<div class="note">Классическая или современная стрижка. Услуга включает в себя мытьё головы до и после стрижки шампунем American Crew, массаж головы плеч и рук, укладка с примирением высококачественной мужской косметики , также консультация и рекомендации по уходу за волосами</div>
+			</div>
+			<div class="service_item">
+				<div class="servoce_top">
+					<div class="name">Королевское бритье</div>
+					<div class="price">150 000 UZS</div>
+				</div>
+				<div class="time">45м</div>
+				<div class="note">Классическая или современная стрижка. Услуга включает в себя мытьё головы до и после стрижки шампунем American Crew, массаж головы плеч и рук, укладка с примирением высококачественной мужской косметики , также консультация и рекомендации по уходу за волосами</div>
+			</div>
+			<div class="service_item">
+				<div class="servoce_top">
+					<div class="name">Укладка</div>
+					<div class="price">120 000 UZS</div>
+				</div>
+				<div class="time">30м</div>
+				<div class="note">Классическая или современная стрижка. Услуга включает в себя мытьё головы до и после стрижки шампунем American Crew, массаж головы плеч и рук, укладка с примирением высококачественной мужской косметики , также консультация и рекомендации по уходу за волосами</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom_btn">
+		<div class="btn book_btn"><span>Забронировать</span></div>
+	</div>
+	<div class="popop_modal book_block_popup">
+		<div class="popup_inner">
+			<div class="title">Подтвердите бронь</div>
+			<div class="popup_date"></div>
+			<div class="list_param"></div>
+			<div class="btns">
+				<div class="btn close-btn">Отменить</div>
+				<a href="success.html" class="btn">Подтверждаю</a>
+			</div>
+		</div>
+	</div>
+include _footer.jade

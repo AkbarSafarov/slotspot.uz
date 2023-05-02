@@ -1,0 +1,82 @@
+include _header.jade
+	<div class="main_block_wrap my_book">
+		<div class="title">
+			<div class="back_btn"></div>
+			<div class="title_name">Мои брони</div>
+			<div class="btn_save" style="opacity: 0; visibility: hidden;"></div>
+		</div>
+		<div class="book_item">
+			<span class="image">
+				<img src="files/item.png" alt="">
+			</span>
+			<span class="right">
+				<span class="name">Barbershop Tashkent</span>
+				<span class="text">Адрес: Ул. Бунедкор 8а метро миллий бог, Tashkent</span>
+			</span>
+		</div>
+		<div class="btns_call">
+			<a href="te:12365544" class="btn call_btn"><span>Позвонить</span></a>
+			<a href="" target="_blank" class="btn map_link"><span>Построить маршрут</span></a>
+		</div>
+		<div class="order_number">Номер заказа <span>9831</span></div>
+		<div class="choose_slot_block">
+			<div class="name">Выберите свободный слот</div>
+			<div class="swiper mySwiperSlot" data-id="mySwiperSlot">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide item active">
+						<div class="day_week">Вс</div>
+						<div class="day">23 апр</div>
+						<div class="time">14:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service_block">
+			<div class="title_name">Наши услуги</div>
+			<div class="service_item active">
+				<div class="servoce_top">
+					<div class="name">Мужская стрижка (VIP кабинка)</div>
+					<div class="price">300 000 UZS</div>
+				</div>
+				<div class="time">1ч 30м</div>
+				<div class="note">Классическая или современная стрижка. Услуга включает в себя мытьё головы до и после стрижки шампунем American Crew, массаж головы плеч и рук, укладка с примирением высококачественной мужской косметики , также консультация и рекомендации по уходу за волосами</div>
+			</div>
+		</div>
+	</div>
+	<div class="fixed_menu_panel">
+		<ul>
+			<li>
+				<a href="feed.html">
+					<span class="icon">
+						<img src="files/feed.svg" alt="">
+					</span>
+					<span class="name">Все места</span>
+				</a>
+			</li>
+			<li class="opened">
+				<a href="calendar.html">
+					<span class="icon">
+						<img src="files/calendar.svg" alt="">
+					</span>
+					<span class="name">Мои брони</span>
+				</a>
+			</li>
+			<li>
+				<a href="bookmark.html">
+					<span class="icon">
+						<img src="files/bookmark.svg" alt="">
+					</span>
+					<span class="name">Закладки</span>
+				</a>
+			</li>
+			<li>
+				<a href="user.html">
+					<span class="icon">
+						<img src="files/user.svg" alt="">
+					</span>
+					<span class="name">Профиль</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+include _footer.jade
